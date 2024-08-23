@@ -1,0 +1,82 @@
+
+
+<div class="calculator">
+  <div class="mb-3">
+    <input type="text" class="calculator-screen" value="{{ calculo }}" id="calculator-screen" disabled>
+    <input type="text" class="calculator-screen" value="{{ resultado }}" id="calculator-screen" disabled>  
+  </div>
+<div class="row">
+  <div class="col-3 mb-1">
+    <button class="btn-number btn" (click)="Limpiar($event)">C</button>
+  </div>
+  <div class="col-3 mb-1">
+    <button class="btn-number btn" (click)="AsignarNumero($event)">( )</button>
+  </div>
+  <div class="col-3 mb-1">
+    <button class="btn-number btn" (click)="AsignarOperador($event)" style="font-size: 35px;">π</button>
+  </div>
+  <div class="col-3 mb-1">
+    <button class="btn-number btn" (click)="AsignarOperador($event)">/</button>
+  </div>
+</div>
+  <div class="row">
+    <div class="col-3 mb-1">
+      <button class="btn-number" (click)="AsignarNumero($event)">7</button>
+    </div>
+    <div class="col-3 mb-1">
+      <button class="btn-number" (click)="AsignarNumero($event)">8</button>
+    </div>
+    <div class="col-3 mb-1">
+      <button class="btn-number" (click)="AsignarNumero($event)">9</button>
+    </div>
+    <div class="col-3 mb-1">
+      <button class="btn-number btn" (click)="AsignarOperador($event)">*</button>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-3 mb-1">
+      <button class="btn-number" (click)="AsignarNumero($event)">4</button>
+    </div>
+    <div class="col-3 mb-1">
+      <button class="btn-number" (click)="AsignarNumero($event)">5</button>
+    </div>
+    <div class="col-3 mb-1">
+      <button class="btn-number" (click)="AsignarNumero($event)">6</button>
+    </div>
+    <div class="col-3 mb-1">
+      <button class="btn-number btn" (click)="AsignarOperador($event)">-</button>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-3 mb-1">
+      <button class="btn-number" (click)="AsignarNumero($event)">1</button>
+    </div>
+    <div class="col-3 mb-1">
+      <button class="btn-number" (click)="AsignarNumero($event)">2</button>
+    </div>
+    <div class="col-3 mb-1">
+      <button class="btn-number" (click)="AsignarNumero($event)">3</button>
+    </div>
+    <div class="col-3 mb-1">
+      <button class="btn-number btn" (click)="AsignarOperador($event)">+</button>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-3 mb-1">
+      <button class="btn-number" (click)="AsignarNumero($event)">0</button>
+    </div>
+    <div class="col-3 mb-1">
+      <button class="btn-number" (click)="EsPunto($event)"> . </button>
+    </div>    
+    <div class="col-3 mb-1">
+      <button class="btn-number btn-igual" (click)="esIgual($event)">=</button>
+    </div>
+    <div class="col-3 mb-1">
+      <button class="btn-number" (click)="BorrarCaracter($event)" style="font-size: 20px;">⌫</button>
+    </div>
+  </div>
+
+</div>
